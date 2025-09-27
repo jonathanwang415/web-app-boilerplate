@@ -1,0 +1,124 @@
+# Cursor Rules for Web App Boilerplate
+
+## Project Overview
+This is a modern web application boilerplate built with Next.js, React, Radix UI, Redis, and SQLite. The project is optimized for rapid development with Cursor AI assistance.
+
+## Tech Stack
+- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
+- **UI Components**: Radix UI primitives with custom styling
+- **Backend**: Next.js API routes
+- **Database**: SQLite (development), Redis (caching/sessions)
+- **Authentication**: JWT tokens with Redis session management
+- **Validation**: Zod schemas
+- **Styling**: Tailwind CSS with custom design system
+
+## Code Style & Conventions
+
+### TypeScript
+- Use strict TypeScript with proper type definitions
+- Prefer interfaces over types for object shapes
+- Use Zod for runtime validation and type inference
+- Export types from centralized files (src/types/index.ts)
+
+### React/Next.js
+- Use "use client" directive only when necessary
+- Prefer Server Components when possible
+- Use proper error boundaries and loading states
+- Follow Next.js 15 App Router conventions
+
+### Component Structure
+- Place UI components in src/components/ui/
+- Place layout components in src/components/layout/
+- Use forwardRef for components that need ref forwarding
+- Export components as both default and named exports when appropriate
+
+### API Routes
+- Use proper HTTP status codes from constants
+- Validate input with Zod schemas
+- Return consistent API response format
+- Handle errors gracefully with try-catch blocks
+
+### Database
+- Use prepared statements for SQLite queries
+- Implement proper connection management
+- Use Redis for caching and session management
+- Follow the established database schema patterns
+
+## File Organization
+```
+src/
+├── app/                 # Next.js App Router
+├── components/          # React components
+│   ├── ui/             # Reusable UI components
+│   └── layout/         # Layout components
+├── lib/                # Utility functions and configurations
+├── database/           # Database connections and utilities
+├── middleware/         # Custom middleware functions
+├── types/              # TypeScript type definitions
+├── constants/          # Application constants
+└── hooks/              # Custom React hooks
+```
+
+## Development Guidelines
+
+### When creating new components:
+1. Use Radix UI primitives as base components
+2. Style with Tailwind CSS classes
+3. Use the cn() utility for conditional classes
+4. Follow the established component patterns
+5. Add proper TypeScript types
+
+### When creating API routes:
+1. Validate input with Zod schemas
+2. Use proper error handling
+3. Return consistent response format
+4. Consider caching with Redis when appropriate
+5. Use the established database patterns
+
+### When working with the database:
+1. Use prepared statements for security
+2. Implement proper error handling
+3. Consider Redis caching for frequently accessed data
+4. Follow the established schema patterns
+
+## Cursor-Specific Instructions
+
+### Code Generation
+- Always generate TypeScript code with proper types
+- Use the established utility functions (cn, formatDate, etc.)
+- Follow the component and API route patterns
+- Include proper error handling and validation
+
+### Refactoring
+- Maintain the established file structure
+- Update types when changing data structures
+- Ensure all imports are properly updated
+- Maintain consistency with existing code patterns
+
+### Debugging
+- Use console.error for server-side errors
+- Implement proper error boundaries for client-side errors
+- Use the established logging patterns
+- Consider adding debug utilities when needed
+
+## Performance Considerations
+- Use React.memo for expensive components
+- Implement proper caching strategies with Redis
+- Use Next.js Image component for optimized images
+- Consider code splitting for large components
+- Use proper database indexing
+
+## Security Best Practices
+- Validate all inputs with Zod schemas
+- Use prepared statements for database queries
+- Implement proper JWT token handling
+- Use environment variables for sensitive data
+- Follow OWASP security guidelines
+
+## Testing Strategy
+- Write unit tests for utility functions
+- Test API routes with proper mocking
+- Test components with React Testing Library
+- Use proper test data and fixtures
+
+Remember: This boilerplate is designed for rapid development. Focus on clean, maintainable code that follows established patterns and conventions.
