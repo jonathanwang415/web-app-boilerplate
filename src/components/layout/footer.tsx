@@ -6,10 +6,10 @@ export function Footer() {
           Built with Next.js, React, and Radix UI. The source code is available
           on{" "}
           <a
-            href="#"
+            href="https://github.com/jonathanwang415/web-app-boilerplate"
             target="_blank"
             rel="noreferrer"
-            className="font-medium underline underline-offset-4"
+            className="font-medium underline underline-offset-4 hover:text-primary transition-colors"
           >
             GitHub
           </a>
