@@ -20,11 +20,33 @@ These prompts are designed to help with:
 
 ## 🚀 Usage
 
-### For Cursor AI
+### Bootstrapping
 
-Copy and paste relevant prompts into Cursor's chat to get AI assistance with specific tasks.
+High Level App Idea - 1-2 sentence description on the application
 
-### For Development
+Requirements/Features:
+- User can... statements
+
+UX Design
+- descriptions on the UX design
+- Simplisitic, intentional color usage
+
+Tech Stack:
+- Any specific tech requirements
+- Frontend: Next.js, React, Tailwind, Radix UI
+- Backend: Next.js API Routes, SQLite, Redis, 
+- Tools: Eslint, Prettier, Typescript, Husky, 
+
+Notes:
+- Create a plan with phases for each feature/requirement to review before starting
+- Plan should have high level class/component relationships defined for code organization. Includes things like app state management across components
+- Plan should also include any new libraries/tools we are adding
+- Ask me any questions before starting
+- Add tests for each feature/requirement
+- Execute phases sequentially, pausing to allow me to manually verify and provide feedback
+- Check off completed tasks and features in the plan
+
+### For Specific Feature Development
 
 Use these prompts as templates when:
 
